@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ataxx</title>
+	<meta name="keywords" content="game, ataxx, reversi, artificial intelligence">
+	<meta name="description" content="Play Ataxx against competent Artifial Intelligence">
+	<meta name="author" content="Mikko Leino">
+
+	<link rel="stylesheet" type="text/css" href="ataxx.css" media="all" />
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+	<script type="text/javascript" src="jquery-1.5.min.js"></script>
+	<script type="text/javascript" src="jquery.sparkline.min.js"></script>
+	<script type="text/javascript" src="ataxx-common.js"></script>
+	<script type="text/javascript" src="ataxx-runner.js"></script>
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-30710187-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+<body>
+	<h1>Ataxx</h1>
+	<p id="jserror">
+		I'm sorry! This version of Ataxx is implemented in JavaScript. Therefore you have to <a href="http://enable-javascript.com/">enable it</a> to enjoy the game. Thanks! 
+	</p>
+	<div id="container">
+		<p>
+			...is a <a href="http://en.wikipedia.org/wiki/Reversi">Reversi</a>-like game. Your goal is to have more pieces than your opponent at the end of the game. The opponent is cunning Artificial Intelligence!
+		</p>
+		<p>
+			You can <a href="#rules">read the rules</a> and <a href="#gameplay">learn how to play</a> below. 
+		</p>
+		<div id="oldgame"></div>
+		<div id="difficulty">
+			<h3>AI level</h3>
+			<label><input type="radio" name="difficulty" value="beginner" checked /> Beginner</label>, 
+			<label><input type="radio" name="difficulty" value="intermediate" /> Intermediate</label>, or
+			<label id="expert" class="disabled" title="This option is computationally demanding. Consequently, it's enabled only for browsers which support Web Workers, e.g. Firefox 3.5+, Chrome 3+, Safari 4+ and Opera 10.6+."><input type="radio" name="difficulty" value="expert" disabled /> Expert</label>.
+		</div>
+		<div id="human">
+			<strong class="score">2</strong>
+			<small class="player">You</small>
+		</div>
+		<div id="ai">
+			<strong class="score">2</strong>
+			<small class="player">AI</small>
+		</div>
+		<div id="gameover">
+			<p>Game over! <span id="result"></span><button id="playagain">Play again?</button></p>
+			<figure>
+				<figcaption>Score history</figcaption>
+				<div id="scorehistory"></div>
+			</figure>
+		</div>
+		<div id="rules">
+			<h2>Rules</h2>
+			<p>The player can make two kinds of moves, either</p>
+			<ol>
+				<li>place a new piece on an empty square next to one of her pieces, or
+				<li>take one of her pieces and move it in any direction over one square to an empty square, this is called jumping.
+			</ol>
+			<p>Once the move is made, all opponent's pieces adjacent to the new or moved piece are captured, ie. they are converted to the color of the moving player.</p>
+			<p>If the player has no legal moves, she has to pass. However, if the player has legal moves, she cannot pass her turn.</p>
+			<p>The game ends when the board is full or one of the players loses all her pieces; the player with more pieces wins.</p>
+		</div>
+		<div id="gameplay">
+			<h2>How to play</h2>
+			<p>You'll play with the light pieces <img src="lightpiece-small.png" alt="example of a light piece" /> and the Artificial Intelligence uses the dark pieces <img src="darkpiece-small.png" alt="example of a dark piece" />.</p>
+			<p>Placing a new piece is done by clicking an empty square. These are marked with a little dot <img src="helper-small.png"  alt="example of a helper dot"  />. To jump you have to first select the piece you want to move and after that click where you want the piece moved.</p>
+			<p>Your turn is passed automatically, if no legal moves exist.</p>
+			<p>Jumping piece is marked with a dot <img src="lightpiece-dot-small.png" alt="example of jumping piece marked with a dot" />. You can cancel the jump by clicking the piece again.</p>
+			<p>Last move by the Artificial Intelligence is marked with, you guessed it!, a dot <img src="darkpiece-dot-small.png" alt="example of opponent's piece marked with a dot" />.
+		</div>
+		<!-- social media sharing -->
+		<aside id="share">
+<!-- TWITTER -->
+<!--<a href="http://twitter.com/share" class="twitter-share-button" 
+data-url="http://bananabo.at/ataxx/" data-text="Play Ataxx against 
+competent Artifial Intelligence!" data-count="none">Tweet</a><script 
+type="text/javascript" 
+src="http://platform.twitter.com/widgets.js"></script>-->
+<!-- /TWITTER -->
+
+<!-- FACEBOOK -->
+<!--<iframe 
+src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fbananabo.at%2Fataxx%2F&amp;layout=button_count&amp;show_faces=false&amp;width=110&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" 
+scrolling="no" frameborder="0" style="border:none; overflow:hidden; 
+width:100px; height:21px;" allowTransparency="true"></iframe>-->
+<!-- /FACEBOOK -->
+		</aside>
+		<!-- /sharing -->
+	</div>
+	<footer id="footer">
+		<a href="http://en.wikipedia.org/wiki/Ataxx">Ataxx</a> 
+was invented by Dave Crummack and Craig Galley. This version was made by 
+<a href="mailto:mikko@viiksipojat.fi">Mikko Leino</a>, for the fun of 
+it. You can follow him on Twitter <a 
+href="http://twitter.com/mjleino">@mjleino</a>.
+	</footer>
+</body>
+</html>

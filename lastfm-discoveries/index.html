@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Last.fm Discoveries</title>
+	
+	<meta name="keywords" content="Last.fm, tool, music, artist, exploration">
+	<meta name="description" content="Explore your listening habits on Last.fm">
+	<meta name="author" content="Mikko Leino">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="fun.css">
+
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script type="text/javascript" src="lastfm.api.md5.js"></script>
+	<script type="text/javascript" src="lastfm.api.js"></script>
+	<script type="text/javascript" src="lastfm.api.cache.js"></script>
+	<script type="text/javascript" src="fun.js"></script>
+	<script type="text/javascript" src="ui.js"></script>
+	
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30710187-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body><div id="container">
+
+	<h1>Last.fm Discoveries</h1>
+	
+	<p id="description">Check out which new artists you found during a given year. Just fill in your username and a year that you have something scrobbled. Try also your friends' usernames!</p>
+	
+	<p id="javascriptError">
+		You need to enable JavaScript in your browser for this to work. Sorry!
+	</p>
+	
+	<div id="error">
+	</div>
+	
+	<div id="results">
+
+	</div>
+	<div id="hedera">
+		&nbsp;
+	</div>
+	<div id="share">
+		Share the fun with your friends! <a id="link" href="#">Link to these results.</a>
+		
+		<div id="tweetLike">
+		<!-- TWITTER -->
+<!--<a href="http://twitter.com/share" class="twitter-share-button" 
+data-text="Check out which new artists you found on Last.fm last year!" 
+data-count="none">Tweet</a><script type="text/javascript" 
+src="http://platform.twitter.com/widgets.js"></script>-->
+		<!-- /TWITTER -->
+		
+		<!-- FACEBOOK -->
+<!--<iframe 
+src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fbananabo.at%2Flastfm%2F&amp;layout=button_count&amp;show_faces=false&amp;width=150&amp;action=like&amp;colorscheme=light&amp;height=21" 
+scrolling="no" frameborder="0" style="border:none; overflow:hidden; 
+width:150px; height:21px;" allowTransparency="true"></iframe>-->
+		<!-- /FACEBOOK -->
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="author"><a 
+href="mailto:mikko@viiksipojat.fi">Mikko Leino</a> is the happy 
+author of this experiment. You can follow him on Twitter <a 
+href="http://twitter.com/mjleino">@mjleino</a>.</div>
+		<div id="info">Built with love & <a href="http://www.last.fm"><img alt="Last.fm" src="lastfm.gif"></a></div>
+	</div>
+	
+</div></body>
+</html>

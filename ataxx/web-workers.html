@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Workers Tests</title>
+	<script type="text/javascript" src="jquery-1.5.min.js"></script>
+	
+	<script type="text/javascript">
+	
+		MYGLOBAL = (function() {
+			return {
+				str: "testi",
+				num: 3,
+				obj: {
+					a: "1",
+					b: "2"
+				}
+			};
+		})();
+
+		var worker = new Worker('worker.js');
+		worker.onmessage = function(e) {
+			$('#output').text(e.data);
+		}; 
+		
+		worker.onerror = function(e) {
+			$('#output').text(e.message);
+		};
+	
+		var sampleFunction = function() {
+			var data = [[{'outside': false}],[2,3], $]
+			worker.postMessage(data);
+		};
+		
+		setTimeout(sampleFunction, 100);
+
+	
+	</script>
+</head>
+<body>
+	<div id="output">
+	</div>
+	
+</body>
+</html>

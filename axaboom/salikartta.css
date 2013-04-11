@@ -1,0 +1,133 @@
+body {
+	/* TODO: maybe zapfino is not the optimal solution? */
+	/*font-family: "Zapfino", "Big Caslon", "Georgia", sans-serif;
+	line-height: 1.5;*/
+
+	background: black;
+}
+
+#container {
+	width: 600px;
+	margin: 0 auto;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/* INCLUDING AISLES (which are just black) */
+td {
+	width: 30px;
+	height: 30px;
+	border: solid 4px transparent;
+}
+
+h1 {
+	font-size: 120px;
+	color: rgba(32,32,32, 0.2);
+}
+
+#screen {
+	height: 200px;
+	text-align: center;
+	background: #eee url(arnold/boobes.gif);
+	background-size: cover;
+	background-position: center 10%;
+	border: 0; /* fixes strange pixel displacement on arnold */
+}
+
+.thumbnail {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: 0;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.bench {
+	background: limegreen;
+	padding-bottom: 8px;
+	border-bottom: 4px solid rgba(0,0,0, 0.2);
+
+	color: rgba(0,0,0, 0.1);
+	text-align: center;
+
+	cursor: pointer;
+
+	/* disable annoying selections when multiclicking */
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	     -o-user-select: none;
+	        user-select: none;
+
+	/* TROLLOLLO copied from bootstrap */
+	-webkit-transition: all 0.2s ease-in-out;
+	   -moz-transition: all 0.2s ease-in-out;
+	     -o-transition: all 0.2s ease-in-out;
+	        transition: all 0.2s ease-in-out;
+}
+
+/* TODO: sadly these animation lags a bit behind the tooltip */
+.bench:not(.reserved):not(:only-child) {
+	background: steelblue;
+}
+
+.selected.gayness {
+	font-size: 2em;
+	width: 90px;
+	height: 90px;
+}
+
+.reserved {
+	background: firebrick;
+}
+
+.reserved + .tooltip > .tooltip-inner {
+	color: #441100;
+	background: goldenrod;
+}
+
+.tooltip-inner {
+	max-width: 500px;
+	font-size: 20pt;
+	border: 1px solid #222;
+}
+
+.tooltip.in {
+	opacity: 1;
+}
+
+#form-template {
+	display: none;
+}
+
+input[type=text] {
+	background: none;
+	border: none;
+	border-bottom: 1px dashed white;
+	color: white;
+}
+
+input[type=text]:focus {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+tr:hover > th {
+	color: white;
+}
+
+.bench:hover {
+	color: white;
+}
+
+#disclaimer {
+	text-align: center;
+	margin-bottom: 200px;
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<!--
+888     88888888888888888Y88b   d88PY88b   d88P88888888888888b.  .d88888b.888888       d888888888888888 
+888     888  888    888   Y88b d88P  Y88b d88P   888  888   Y88bd88P" "Y88b "88b      d88888    888     
+888     888  888    888    Y88o88P    Y88o88P    888  888    888888     888  888     d88P888    888     
+Y88b   d88P  888    888     Y888P      Y888P     888  888   d88P888     888  888    d88P 888    888     
+ Y88b d88P   888    888     d888b      d888b     888  8888888P" 888     888  888   d88P  888    888     
+  Y88o88P    888    888    d88888b    d88888b    888  888       888     888  888  d88P   888    888     
+   Y888P     888    888   d88P Y88b  d88P Y88b   888  888       Y88b. .d88P  88P d8888888888    888     
+    Y8P    88888888888888d88P   Y88bd88P   Y88b8888888888        "Y88888P"   888d88P     888    888     
+                                                                           .d88P                        
+                                                                         .d88P"                         
+                                                                        888P"                           
+-->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>BIO AXA</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="salikartta.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="salikartta.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<table id="seatmap">
+			<tr>
+				<th></th>
+				<td colspan="15" id="screen"><h1>BIO AXA</h1></td>
+			</tr>
+			<tr>
+				<td class="aisle" colspan="15"></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">01</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench reserved" title="VIIKSIPOJAT">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">02</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">03</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">04</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench reserved" title="Perhe Turjanmaa">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">05</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">06</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench reserved" title="Jönkkö &amp; Kikare oy">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">07</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">08</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">09</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">10</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">11</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">12</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">13</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+				<td><div class="thumbnail bench">13</div></td>
+				<td><div class="thumbnail bench">14</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">14</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td><div class="thumbnail bench">06</div></td>
+				<td class="aisle"></td>
+				<td class="aisle"></td>
+				<td class="aisle"></td>
+				<td><div class="thumbnail bench">07</div></td>
+				<td><div class="thumbnail bench">08</div></td>
+				<td><div class="thumbnail bench">09</div></td>
+				<td><div class="thumbnail bench">10</div></td>
+				<td><div class="thumbnail bench">11</div></td>
+				<td><div class="thumbnail bench">12</div></td>
+			</tr>
+			<tr>
+				<th><div class="thumbnail">15</div></th>
+				<td><div class="thumbnail bench">01</div></td>
+				<td><div class="thumbnail bench">02</div></td>
+				<td><div class="thumbnail bench">03</div></td>
+				<td><div class="thumbnail bench">04</div></td>
+				<td><div class="thumbnail bench">05</div></td>
+				<td class="aisle"></td>
+				<td class="aisle"></td>
+				<td class="aisle" colspan="8"></td>
+			</tr>
+		</table>
+
+		<p id="disclaimer">
+			Pyrimme noudattamaan paikkavalintoja mahdollisimman tarkasti.
+		</p>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div id="form-template">
+			<form class="form-horizontal" method="get" action="https://holvi.com/shop/AXA-ry/product/bba034eb3a34fecc4a164e1c2cafe50a/">
+				<input type="text" name="seat-holder" placeholder="Nimi" autofocus />
+				<input type="submit" value="BOOM!" class="btn btn-primary" />
+				<input type="hidden" name="seat-number" value="%BENCHNUMBER%" />
+			</form>
+		</div>
+</body>
+</html>

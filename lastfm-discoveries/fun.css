@@ -1,0 +1,118 @@
+body {
+	font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+	/*font-family: "Lucida Grande", Helvetica, Arial, sans-serif;*/
+	font-size: 24px;
+	text-shadow: 0 0 1px #999;
+	background: url('bg.gif') white;
+}
+
+h1 {
+	font-size: 2em;
+	color: #950504;
+}
+h2 {
+	font-size: 1em;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#results {
+	width: 100%;
+}
+
+#result-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#result-list li {
+	text-align: center;
+	float: left;
+	width: 320px;
+	height: 320px;
+}
+
+#results a {
+	color: white;
+	text-decoration: none;
+}
+
+#results a:hover {
+	background: white;
+	color: black;
+}
+
+#error {
+	background: #ffc;
+	padding: 0.5em;
+	display: none;
+}	
+
+#hedera {
+	padding-top: 50px;
+	clear: both;
+	font-size: 64px; 
+	width: 960px; 
+	text-align: center; 
+}
+
+#share {
+	margin-top: 20px;
+	display: none;
+}
+
+#tweetLike {
+	display: inline;
+	position: relative;
+	top: 2px;
+}
+
+#footer {
+	margin-top: 5em;
+	padding: 25px;
+	width: 910px;
+	height: 75px;
+	font-size: 75%;
+	border-top: 1px solid #ddd;
+	color: #555;
+}
+
+#author {
+	width: 455px;
+	padding-top: 5px;
+	float: left;
+}
+
+#info {
+	width: 455px;
+	text-align: right;
+	float: right;
+}
+
+#info img {
+	vertical-align: -6px;
+	border: none;
+}
+
+#username, #year {
+	font-size: 28px;
+	font-family: 'Covered By Your Grace', Arial, serif;
+	border: none;
+	border-bottom: 2px dashed #000;
+	background: url('bg.gif');
+}
+
+#year {
+	width: 45px;
+}
+
+.artistTitle {
+	position: relative;
+	color: white;
+	background: black;
+}

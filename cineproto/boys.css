@@ -1,0 +1,99 @@
+body {
+	padding-top: 60px;
+}
+
+caption {
+	text-align: left;
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: bolder;
+	margin-bottom: 0 !important;
+	border-bottom: none !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+table {
+	/* make offset parent */
+	position: relative;
+}
+
+th {
+	border-top: none !important;
+	background-color: rgb(245,245,245) !important;
+}
+
+tr > th:first-child {
+	border-left: 1px solid rgb(227, 227, 227);
+}
+
+tr > th:last-child {
+	border-right: 1px solid rgb(227, 227, 277);
+}
+
+/* disable transitions? */
+.no-animation {
+	transition: none;
+	-webkit-transition: none; 
+	-moz-transition: none;		
+}
+
+#viixxet {
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg); 
+	-moz-transform: rotate(90deg);	
+	font-size: 50px;
+	font-weight: bold;
+	color: #777;
+	padding: 10px 20px;
+	font-family:  "Impact", sans-serif;
+}
+
+#viixxet:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.show {
+	background-color: white;
+	margin-left: 0;
+	margin-bottom: 0.5em;	
+}
+
+.myboogie {
+	background-color: #C0F0C0;
+}
+.myboogie .badge {
+	background-color: rgba(70, 136, 71, 0.8);
+}
+
+.dehilight {
+	color: #aaa;
+}
+
+.conflict {
+	background-color: #F0C0C0 !important;
+}
+
+.alternative {
+	/*background-color: rgba(192,240,192,.2);*/
+	border: 2px solid green;
+}
+
+.solution {
+	/* ALTERNATIVE THAT IS A SOLUTION TO A KONFLICT */
+	border: 2px solid red;
+}
+
+.togglefix {
+	opacity: 0.4;
+	cursor: pointer;
+}
+
+.togglefix:hover {
+	opacity: 0.6;
+}
+
+tr > td:first-child, tr > th:first-child {
+	text-align: center;
+}

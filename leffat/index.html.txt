@@ -1,0 +1,1 @@
+index.html is generated daily, no need to keep it here

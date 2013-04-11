@@ -1,0 +1,52 @@
+body {
+	background: white;
+	font-family: "Georgia", serif;
+	color: #777;
+}
+
+h1, h2, h3, h4 {
+	font-family: "TODO", sans-serif;
+	font-weight: bold;
+	background-color: #FF7B88;
+	display: inline-block;
+	margin: 0;
+	padding: 0 0.5em 0 0.2em;
+	font-style: italic;
+}
+
+h1 {
+	font-size: 500%;
+	margin-bottom: 0.5em;
+}
+
+article {
+	width: 645px;
+	margin: 5% auto;
+}
+
+section {
+	margin-top: 1em;
+	overflow: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #777;
+}
+
+ul {
+	padding-left: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+li:before {
+	content: "– ";
+}
+
+.third {
+	width: 215px;
+	float: left;
+}

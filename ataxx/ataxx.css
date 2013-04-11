@@ -1,0 +1,240 @@
+/* ESSENTIALS FOR GAME PLAY -> */
+#board {
+	width: 398px;
+	height: 398px;
+}
+.square {
+	width: 52px;
+	height: 52px;
+	float: left;
+	padding: 2px;
+	border-width: 1px 0 0 1px;
+	border-style: solid;
+	border-color: #2B130D;
+}
+.square:first-child {
+	clear: both;
+	border-left-width: 0;
+}
+.row:first-child .square {
+	border-top-width: 0;
+}
+/* SECONDARY RULES (aka game works without these) -> */
+/* http://www.fontsquirrel.com/fonts/Sansation */
+@font-face {
+	font-family: Sansation;
+	src: url("Sansation_Regular.ttf");
+}
+body {
+	font-family: Sansation, Helvetica, Arial, sans-serif;
+	color: #2B130D;
+	text-shadow: 0px 0px 2px #886860;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 auto;
+	background: url("background.jpg") #f7f5e5;
+	width: 418px;
+}
+h1,h2,h3,p,ol,figcaption,#scorehistory {
+	margin-bottom: 24px;
+}
+h1, h2, h3, a, figcaption {
+	color: #A8808B;
+}
+h1 {
+	font-size: 32px;
+	line-height: 48px;
+	margin-top: 48px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	display: inline;
+	font-weight: normal;
+	font-size: 12px;
+}
+a:hover {
+	color: #C88F9B;
+}
+ol { 
+  margin-left: 2em;
+  list-style-type: lower-roman;
+}
+figcaption {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+}
+#container {
+	position: relative; /* descendant position absolutes use this */
+	display: none; /* we depend on javascript */
+}
+#board {
+	margin: 38px 0 0 0;
+	padding: 10px;
+	background: url("board.jpg") #82674b no-repeat;
+}
+#illegal { /* not quite sure about this */
+	width: 52px;
+	height: 52px;
+	padding: 3px 2px 2px 3px;
+	text-align: center;
+	line-height: 52px;
+	font-size: 40px;
+	color: #a00;
+	text-shadow: 0 0 5px black;
+	position: absolute;
+	display: none;
+	cursor: pointer;
+}
+#human, #ai {
+	width: 60px;
+	height: 55px;
+	position: absolute;
+	text-align: center;
+	color: #f7f5e5;
+	top: 225px;
+}
+#human {
+	background: url("score-human.gif") #A8808B;
+	left: -60px;
+}
+#ai {
+	background: url("score-ai.gif") #2B130D;
+	left: 418px;
+}
+#human .player {
+	right: 5px;
+}
+#ai .player {
+	left: 5px;
+}
+#ai > img {
+	position: absolute;
+	bottom: -24px;
+	left: 22px;
+	display: none;
+}
+#difficulty {
+	text-align: center;
+	font-size: 12px;
+	margin-top: 0;
+	margin-bottom: 24px; 
+}
+#gameover > p:first-child {
+	margin-bottom: 20px; /* to account for "play again?" button */
+}
+#gameplay  img {
+	width: 18px;
+	height: 18px; /* http://code.google.com/speed/page-speed/docs/rendering.html#SpecifyImageDimensions */
+	vertical-align: text-bottom;
+}
+#share {
+	position: fixed;
+	width: 110px;
+	left: 10px;
+	top: 10px;
+	opacity: 0.5;
+}
+#share:hover {
+	opacity: 1;
+}
+#footer {
+	display: block;
+	margin-top: 96px;
+	margin-bottom: 24px;
+	font-size: 12px;
+	color: #888;
+	text-shadow: 0 0 1px white;
+}
+.disabled {
+	color: #aaa;
+	text-shadow: 0px 0px 1px white;
+}
+.light, .helper {
+	cursor: pointer;
+}
+.player {
+	font-size: 12px;
+	position: absolute;
+	line-height: 12px;
+	bottom: -1px;
+}
+.score {
+	font-size: 36px;
+	line-height: 55px;
+}
+.loser {
+	font-weight: normal;
+	font-size: 24px;
+}
+.winner {
+	font-size: 36px;
+	text-shadow: 0px 0px 10px #ffb;
+}
+/* not too sure about these -> */
+::-moz-selection {
+	color: #F7F5E5;
+	background: #A8808B;
+}
+::selection {
+	color: #F7F5E5;
+	background: #A8808B;
+}
+#playagain {
+	vertical-align: top;
+	font-size: 18px;
+	color: #fff;
+	padding: 2px 10px;
+	cursor: pointer;
+	background: #a8808b;
+	background: -moz-linear-gradient(
+		top,
+		#e0aaba 0%,
+		#a8808b 50%,
+		#a8808b);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#e0aaba),
+		color-stop(0.50, #a8808b),
+		to(#a8808b));
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border: 0;
+	box-shadow: 
+		1px 1px 3px rgba(000,000,000,0.8),
+		inset 0px -1px 0px rgba(255,255,255,0);
+	-moz-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.8),
+		inset 0px -1px 0px rgba(255,255,255,0);
+	-webkit-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.8),
+		inset 0px -1px 0px rgba(255,255,255,0);
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3)
+}
+#playagain:active {
+	background: #e0aaba;
+	background: -moz-linear-gradient(
+		top,
+		#e0aaba 0%,
+		#a8808b 70%,
+		#a8808b);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#e0aaba),
+		color-stop(0.70, #a8808b),
+		to(#a8808b));
+	box-shadow:
+		1px 1px 2px rgba(000,000,000,0.3),
+		inset 0px -1px 0px rgba(255,255,255,0);
+	-moz-box-shadow:
+		1px 1px 2px rgba(000,000,000,0.3),
+		inset 0px -1px 0px rgba(255,255,255,0);
+	-webkit-box-shadow:
+		1px 1px 2px rgba(000,000,000,0.3),
+		inset 0px -1px 0px rgba(255,255,255,0);
+}
