@@ -50,3 +50,7 @@ li:before {
 	width: 215px;
 	float: left;
 }
+
+.hilight {
+	text-decoration: underline;
+}
