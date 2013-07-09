@@ -8,10 +8,17 @@ LOGFILE=/home/viiksipo/github-hook.log
 # # something
 #done < /dev/stdin
 
-REMOTE=$(dig -x $REMOTE_ADDR +short)
-echo $(date -u +'%Y-%m-%d %H:%M:%S') $REMOTE >> $LOGFILE
+# tää meni rikki ku github teki jotai. dig ei löydä ip:llä kivaa.
+# REMOTE=$(dig -x $REMOTE_ADDR +short)
+# echo $(date -u +'%Y-%m-%d %H:%M:%S') $REMOTE >> $LOGFILE
+# if [ "${REMOTE:${#REMOTE}-12}" = ".github.com." ]; then
+# 	/home/viiksipo/github/checkout.sh
+# fi
+# /rikki
 
-if [ "${REMOTE:${#REMOTE}-12}" = ".github.com." ]; then
+echo $(date -u +'%Y-%m-%d %H:%M:%S') $REMOTE_ADDR >> $LOGFILE
+
+if dig -x $REMOTE_ADDR | grep 'github.com. ' > /dev/null ; then # paskempi mut sinne päin ^___^
 	/home/viiksipo/github/checkout.sh
 fi
 
