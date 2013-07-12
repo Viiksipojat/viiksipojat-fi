@@ -1,0 +1,32 @@
+html { 
+	background: #555 url(bgcover.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+
+	font-family: Futura, "Gill Sans", "Century Gothic", "Dejavu Sans", "Trebuchet MS", sans-serif ;
+	color: white;
+
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+h1 {
+	font-style: italic;
+	font-size: 48pt;
+}
+
+ol, a {
+	font-size: 24pt;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	border-bottom: solid 4px white;
+}
+
+ol {
+	list-style-type: circle;
+}
