@@ -17,14 +17,37 @@ h1 {
 	font-size: 48pt;
 }
 
-ol, a {
+ol, a, table {
 	font-size: 24pt;
+}
+
+td:first-child {
+	min-width: 290px;
+	vertical-align: top;
+}
+
+td + td {
+	padding-left: 24px;
+}
+
+table + p {
+	margin-top: 60px;
 }
 
 a {
 	color: white;
 	text-decoration: none;
 	border-bottom: solid 4px white;
+}
+
+.ext {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.ext:after {
+	margin-left: 10px;
+	content: url("external.png");
 }
 
 ol {
