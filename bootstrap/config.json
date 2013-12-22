@@ -1,0 +1,25 @@
+{
+  "vars": {},
+  "css": [
+    "print.less",
+    "type.less",
+    "code.less",
+    "grid.less",
+    "forms.less",
+    "buttons.less",
+    "navs.less",
+    "navbar.less",
+    "labels.less",
+    "badges.less",
+    "thumbnails.less",
+    "alerts.less",
+    "panels.less",
+    "wells.less",
+    "close.less",
+    "utilities.less",
+    "responsive-utilities.less"
+  ],
+  "js": [
+    "alert.js"
+  ]
+}

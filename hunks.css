@@ -1,0 +1,277 @@
+/*
+COLORS 
+
+ BACKGROUND / FOREGROUND 
+ - white 	#fafafa
+ - black   	#050505
+
+ PASTER RAINBOW, http://www.colourlovers.com/palette/1250813/Pastel_Rainbow
+ - red 		#FFABAB
+ - orange 	#FFDAAB
+ - green 	#DDFFAB
+ - blue 	#ABE4FF
+ - violet 	#D9ABFF
+*/
+
+@font-face {
+    font-family: 'intro';
+    src: url('fonts/intro-webfont.eot');
+    src: url('fonts/intro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/intro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background: #fafafa;	
+	color:      #222;
+	font-family: georgia, serif;
+	font-size: 18px;
+	line-height: 27px;
+
+	position: relative;
+}
+
+a {
+	color: #222;
+	border-bottom: 1px dotted #222;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+	border-bottom: 2px solid #000;
+	text-decoration: none;
+}
+
+hr {
+	margin: 54px;
+	border-top: 1px solid #050505;
+}
+
+#breaking-news {
+	border-radius: 0;
+	background-color: #ddd;
+	padding: 27px;
+	margin-bottom: 27px;
+}
+#breaking-news>strong {
+	font-family: "intro", sans-serif;
+	margin-right: 14px;
+}
+#breaking-news>.close {
+	top: 0;
+	right: 0;
+}
+
+#boyz {
+	position: relative;
+}
+#img-boyz {
+	width: 100%;
+}
+#nips-on {
+	position: absolute;
+	right: 27px;
+	bottom: 27px;
+	background-color: transparent;
+	color: #ccc;
+}
+#nips-on:hover {
+	color: #adadad;
+}
+
+/* UTILS */
+.cool-slab, section > h1 {
+	font-family: "intro", sans-serif;
+}
+.hotty-italic {
+	font-family: Cochin, Georgia, serif; /* http://www.erin-lawrence.com/webfonts/ */
+	font-style: italic;	
+}
+
+/* HEADER */
+.navbar {
+	margin: 27px 0;
+}
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+.navbar-text {
+	color: #050505 !important;
+}
+.navbar-brand, .navbar-brand:hover, #taggyline a, #fb-link a {
+	border-bottom: none;
+}
+#taggyline, #fb-link {
+	height: 72px;
+	line-height: 72px;
+	font-size: 36px;
+}
+@media (min-width: 1200px) {
+	#taggyline, #fb-link {
+		font-size: 42px;
+	}
+}
+#fb-link img {
+	vertical-align: baseline;
+}
+
+
+#boys {
+	/*margin-top: -130px;*/
+}
+#boys address {
+	margin-top: 54px;
+	margin-bottom: 0;
+}
+#boys address > strong {
+	font-size: 36px;
+}
+
+
+#blurb {
+	font-size: 125%;
+	line-height: 150%;
+	/*text-align: justify;*/
+	margin: 54px 0;
+}
+#stuff-we-do h2 {
+	text-align: center;
+	font-size: 36px;
+	padding: 27px 0;
+	margin: 0;
+}
+#stuff-we-do ol {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+#stuff-we-do li {
+	position: relative;
+	margin-bottom: 30px;
+}
+#stuff-we-do li:last-child {
+	margin-bottom: 0;
+}
+#stuff-we-do li > a {
+	border: 0;
+}
+li.image > a {
+	display: block;
+	height: 263px;
+	width: 263px;
+}
+li.image > a > span {
+	bottom: 0;
+	position: absolute;	
+}
+li.video > iframe {
+	display: block;
+}
+li.text > a > span, li.video > span, li.image > a > span {
+	background-color: #050505;
+	color: #fafafa;
+	display: block;
+	opacity: 0.75;
+	padding: 8px;
+	font-size: smaller;
+	font-family: "Gill Sans", sans-serif;
+	width: 100%;
+}
+li.image > a > span:hover {
+	opacity: 0;
+}
+/* stuff */
+#urb-vii { 		background: url(imgs/urb-vii-resized.jpg) }
+#avanto-ii { 	background: url(imgs/avanto-ii-resized.gif) }
+#urb-des-ii {	background: url(imgs/urb-des-ii-resized.jpg) }
+#urb-des-i {	background: url(imgs/urb-des-i-resized.jpg) }
+#avanto-i {		background: url(imgs/avanto-i-resized.gif) }
+#urb-ii {		background: url(imgs/urb-ii-fake-resized.jpg) }
+#unoff-i {		background: url(imgs/unoff-i-resized.jpg) }
+#sfc {			background: url(imgs/specialfilmcompany-resized.png) }
+#tom {			background: url(imgs/tom.png) }
+#korvaava {		background: url(imgs/korvaava.jpg) }
+#cine {			background: url(imgs/espoo-cine.png) }
+#hlt {			background: url(imgs/hlt.png) }
+#kahvi-iii {	background: url(imgs/kahvi-iii-resized.jpg) }
+#kahvi-ii {		background: url(imgs/kahvi-ii-resized.jpg) }
+#kahvi-i {		background: url(imgs/kahvi-i-resized.jpg) }
+#tanssi-iii {	background: url(imgs/tanssi-iii-resized.jpg) }
+#tanssi-ii {	background: url(imgs/TODO) }
+#ida {			background: url(imgs/ida-resized.jpg) }
+#tanssi-i {		background: url(imgs/tanssi-i-resized.jpg) }
+#vix-gal {		background: url(imgs/viiksigalleria-resized.jpg) }
+
+
+/* FOOTER */
+footer {
+	padding-top: 27px; 
+	background-color: #222;
+	color: #ddd;
+    font-size: smaller;
+    margin-top: 162px;
+}
+footer ul {
+	list-style: none;
+	padding-left: 0;
+}
+footer li:before {
+	content: "– ";
+}
+footer a {
+	color: #ddd;
+	border-bottom: 1px dotted #ddd;
+}
+footer a:hover {
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	text-decoration: none;
+}
+#eot {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 0;
+	font-size: 36px;
+	line-height: 48px;
+}
+
+
+/* VIDEO GALLER SPECIFIC STUFF */
+#video-gallery h1 {
+	font-size: 69px;
+	margin: 54px 0 13px 0;
+	text-align: center;
+}
+#video-gallery #blurb {
+	margin: 13px auto 54px auto;
+	text-align: center;
+}
+#video-gallery #nav {
+	font-size: 16px;
+}
+#video-gallery #nav a {
+	border-bottom: none;
+}
+#video-gallery h2 {
+	text-align: center;
+	margin-top: 108px;
+	margin-bottom: 27px;
+}
+#video-gallery .col-md-6 {
+	text-align: center;
+}
+#video-gallery .wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+	margin-bottom: 30px;
+}
+#video-gallery .wrapper > iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
