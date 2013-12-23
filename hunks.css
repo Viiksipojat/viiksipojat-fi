@@ -146,6 +146,19 @@ hr {
 	font-size: 36px;
 	padding: 27px 0;
 	margin: 0;
+	background: 0 50% no-repeat;
+}
+h2#uinti {
+	background-image: url(imgs/icon-swimming.png);
+}
+h2#internet {
+	background-image: url(imgs/icon-internet.png);
+}
+h2#video {
+	background-image: url(imgs/icon-video.png);
+}
+h2#muuta {
+	background-image: url(imgs/icon-coffee.png);
 }
 #stuff-we-do ol {
 	list-style-type: none;
