@@ -150,6 +150,7 @@ hr {
 #stuff-we-do li {
 	position: relative;
 	margin-bottom: 30px;
+	background-size: contain;
 }
 #stuff-we-do li:last-child {
 	margin-bottom: 0;
@@ -157,16 +158,23 @@ hr {
 #stuff-we-do li > a {
 	border: 0;
 }
+
+li.image {
+	position: relative;
+	padding-bottom: 100%; /* square */
+	height: 0;
+}
 li.image > a {
 	display: block;
-	height: 263px;
-	width: 263px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
 }
 li.image > a > span {
 	bottom: 0;
 	position: absolute;	
-}
-li.video {
 }
 li.text > a > span, li.video > span, li.image > a > span {
 	background-color: #050505;
