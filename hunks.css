@@ -131,11 +131,16 @@ hr {
 
 
 #blurb {
-	font-size: 125%;
 	line-height: 150%;
 	/*text-align: justify;*/
 	margin: 54px 0;
 }
+@media (min-width: 768px) {
+	#blurb {
+		font-size: 125%;
+	}
+}
+
 #stuff-we-do h2 {
 	text-align: center;
 	font-size: 36px;
