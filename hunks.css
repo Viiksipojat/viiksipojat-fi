@@ -166,8 +166,7 @@ li.image > a > span {
 	bottom: 0;
 	position: absolute;	
 }
-li.video > iframe {
-	display: block;
+li.video {
 }
 li.text > a > span, li.video > span, li.image > a > span {
 	background-color: #050505;
@@ -199,7 +198,7 @@ li.image > a > span:hover {
 #kahvi-ii {		background: url(imgs/kahvi-ii-resized.jpg) }
 #kahvi-i {		background: url(imgs/kahvi-i-resized.jpg) }
 #tanssi-iii {	background: url(imgs/tanssi-iii-resized.jpg) }
-#tanssi-ii {	background: url(imgs/TODO) }
+/*#tanssi-ii {	background: url(imgs/TODO) }*/
 #ida {			background: url(imgs/ida-resized.jpg) }
 #tanssi-i {		background: url(imgs/tanssi-i-resized.jpg) }
 #vix-gal {		background: url(imgs/viiksigalleria-resized.jpg) }
@@ -265,13 +264,13 @@ footer .col-md-3 {
 #video-gallery .col-md-6 {
 	text-align: center;
 }
-#video-gallery .wrapper {
+.videowrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	height: 0;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
-#video-gallery .wrapper > iframe {
+.videowrapper > iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
