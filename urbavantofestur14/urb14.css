@@ -1,0 +1,69 @@
+html {
+	background: #eee url(avantofestur2014.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+
+	font-family: Futura, "Gill Sans", "Century Gothic", "Dejavu Sans", "Trebuchet MS", sans-serif;
+	color: white;
+
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+body {
+	font-size: 24pt;
+	color: white;
+	text-shadow: #777 2px 2px 4px;
+}
+
+h1 {
+	font-style: italic;
+	font-size: 48pt;
+}
+
+.snowflaker {
+	position: relative;
+	top: -1em;
+}
+
+td:first-child {
+	min-width: 290px;
+	vertical-align: top;
+}
+
+td + td {
+	padding-left: 24px;
+}
+
+td i {
+	display: none;
+	margin-left: 0.5ex;
+	font-style: normal;
+	opacity: 0.9;
+}
+
+table + p {
+	margin-top: 60px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	border-bottom: solid 4px white;
+}
+
+.ext {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.ext:after {
+	margin-left: 10px;
+	content: url("external.png");
+}
+
+ol {
+	list-style-type: circle;
+}
