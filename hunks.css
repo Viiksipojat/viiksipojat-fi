@@ -208,6 +208,7 @@ li.image > a > span:hover {
 	opacity: 0;
 }
 /* stuff */
+#avanto-iii { 	background: url(imgs/avanto-iii-resized.jpg) }
 #urb-vii { 		background: url(imgs/urb-vii-resized.jpg) }
 #avanto-ii { 	background: url(imgs/avanto-ii-resized.gif) }
 #urb-des-ii {	background: url(imgs/urb-des-ii-resized.jpg) }
@@ -215,6 +216,8 @@ li.image > a > span:hover {
 #avanto-i {		background: url(imgs/avanto-i-resized.gif) }
 #urb-ii {		background: url(imgs/urb-ii-fake-resized.jpg) }
 #unoff-i {		background: url(imgs/unoff-i-resized.jpg) }
+#bakkarit {		background: url(imgs/bakkarit-resized.jpg) }
+#nainunta {		background: url(imgs/nainunta-resized.png) }
 #sfc {			background: url(imgs/specialfilmcompany-resized.png) }
 #tom {			background: url(imgs/tom.png) }
 #korvaava {		background: url(imgs/korvaava.jpg) }
