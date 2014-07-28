@@ -211,6 +211,7 @@ li.image > a > span:hover {
 	opacity: 0;
 }
 /* stuff */
+#urb-viii { 	background: url(imgs/urb-viii-resized.jpg) }
 #avanto-iii { 	background: url(imgs/avanto-iii-resized.jpg) }
 #urb-vii { 		background: url(imgs/urb-vii-resized.jpg) }
 #avanto-ii { 	background: url(imgs/avanto-ii-resized.gif) }
