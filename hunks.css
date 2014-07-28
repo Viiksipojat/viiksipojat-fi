@@ -100,20 +100,23 @@ hr {
 .navbar-text {
 	color: #050505 !important;
 }
-.navbar-brand, .navbar-brand:hover, #taggyline a, #fb-link a {
+.navbar-brand, .navbar-brand:hover, #taggyline a, #fb-link a, #github-link a {
 	border-bottom: none;
 }
-#taggyline, #fb-link {
+#taggyline, #fb-link, #github-link {
 	height: 72px;
 	line-height: 72px;
 	font-size: 36px;
 }
 @media (min-width: 1200px) {
-	#taggyline, #fb-link {
+	#taggyline, #fb-link, #github-link {
 		font-size: 42px;
 	}
 }
-#fb-link img {
+#fb-link, #github-link {
+	margin-right: 0;
+}
+#fb-link img, #github-link img {
 	vertical-align: baseline;
 }
 
