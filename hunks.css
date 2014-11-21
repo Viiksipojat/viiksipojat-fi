@@ -65,6 +65,12 @@ hr {
 
 #boyz {
 	position: relative;
+	overflow: hidden;
+	max-height: 39vw; /* 1140 × 446 */
+	transition: max-height 1s;
+}
+#boyz.nips {
+	max-height: 60vw; /* 1140 × 664 */
 }
 #img-boyz {
 	width: 100%;
