@@ -283,6 +283,10 @@ var LASTFMFUN = (function($) {
 		var MINDIM = 320; // picture has to be atleast this wide & tall
 	
 		var showThePicture = function(data) {
+			// see api deprecation comment below, TODO: cleanup
+			ready(data.artist.image[3]['#text'], 300, 300); 
+			return
+
 			var url = "";
 			var width = -1;
 			var height = -1;
@@ -338,7 +342,11 @@ var LASTFMFUN = (function($) {
 //				error:   getHandleError(lastfm.artist.getImages, args, showThePicture, 0)
 //			}
 //		);
-		callLastfm( lastfm.artist.getImages, args, showThePicture );		
+		// callLastfm( lastfm.artist.getImages, args, showThePicture );
+		
+		// artist.getimages deprecated in 2013, lol, http://www.last.fm/group/Last.fm+Web+Services/forum/21604/_/2216689
+		// workaround using artist.getinfo
+		callLastfm( lastfm.artist.getInfo, args, showThePicture );		
 	};
 
 	return pub;
