@@ -239,11 +239,13 @@ var LASTFMFUN = (function($) {
 			var checkFreshness = function(data) {
 				batchCalls--;
 				calculated++;
-				if (data.artisttracks['@attr'] && data.artisttracks['@attr'].items < MINPLAYS) {
+				// if (data.artisttracks['@attr'] && data.artisttracks['@attr'].items < MINPLAYS) {
+				if (data.artisttracks['@attr'] && data.artisttracks.track.length < MINPLAYS) { // api broken, .items not found, workaround 2016-01-26, http://www.last.fm/api/show/user.getArtistTracks
 					// some plays but less than minimum
 					results.push([data.artisttracks['@attr'].artist, playcounts[data.artisttracks['@attr'].artist], data.artisttracks]); 
 				}
-				else if (!data.artisttracks['@attr'] && data.artisttracks.items < MINPLAYS) {
+				// else if (!data.artisttracks['@attr'] && data.artisttracks.items < MINPLAYS) {
+				else if (!data.artisttracks['@attr'] && data.artisttracks.track.length < MINPLAYS) { // api broken, .items not found, workaround 2016-01-26, http://www.last.fm/api/show/user.getArtistTracks
 					// no previous plays at all
 					results.push([data.artisttracks.artist, playcounts[data.artisttracks.artist], data.artisttracks]);
 				}
